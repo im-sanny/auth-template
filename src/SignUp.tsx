@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Eye, EyeOff } from 'lucide-react'
 import { FcGoogle } from 'react-icons/fc';
-import { FaLaptop } from 'react-icons/fa';
+import { FaNetworkWired } from 'react-icons/fa';
+import { RiCommunityLine } from 'react-icons/ri';
+import { GiGrowth } from 'react-icons/gi';
 
 const SignUp = () => {
     const [userType, setUserType] = useState('');
@@ -38,25 +40,27 @@ const SignUp = () => {
                         <div className="space-y-6 w-full max-w-md">
                             <div className="flex items-center gap-4">
                                 <div className="border rounded-lg p-3 border-black">
-                                    <FaLaptop className="w-6 h-6 text-gray-400 dark:text-gray-500" />
+                                    <RiCommunityLine className="w-6 h-6" />
                                 </div>
                                 <div className="text-left">
                                     <p className="text-lg font-bold">Community</p>
                                     <p className="text-sm text-gray-500">At vero eos et accusamus et.</p>
                                 </div>
                             </div>
+
                             <div className="flex items-center gap-4">
                                 <div className="border rounded-lg p-3 border-black">
-                                    <FaLaptop className="w-6 h-6 text-gray-400 dark:text-gray-500" />
+                                    <FaNetworkWired className="w-6 h-6" />
                                 </div>
                                 <div className="text-left">
                                     <p className="text-lg font-bold">Networking</p>
                                     <p className="text-sm text-gray-500">At vero eos et accusamus et.</p>
                                 </div>
                             </div>
+
                             <div className="flex items-center gap-4">
                                 <div className="border rounded-lg p-3 border-black">
-                                    <FaLaptop className="w-6 h-6 text-gray-400 dark:text-gray-500" />
+                                    <GiGrowth className="w-6 h-6" />
                                 </div>
                                 <div className="text-left">
                                     <p className="text-lg font-bold">Growth</p>
@@ -234,10 +238,7 @@ const SignUp = () => {
                         <Button type="submit" className="w-full rounded-full bg-primary hover:bg-primaryHover">
                             Sign Up
                         </Button>
-                        <Button
-
-                            className="w-full rounded-full bg-primary hover:bg-primaryHover mt-4"
-                        >
+                        <Button className="w-full rounded-full bg-primary hover:bg-primaryHover mt-4">
                             <div className="flex items-center justify-center">
                                 <FcGoogle className="w-6 h-6 mr-2" />
                                 <span className="font-semibold">Sign up with Google</span>

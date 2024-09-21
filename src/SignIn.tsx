@@ -1,4 +1,4 @@
-import { FaLaptop } from "react-icons/fa";
+import { FaNetworkWired } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineLock } from "react-icons/md";
 import { Input } from "./components/ui/input";
@@ -7,6 +7,8 @@ import { Button } from "./components/ui/button";
 import { Card, CardContent } from "@/components/ui/card"
 import { Checkbox } from "./components/ui/checkbox";
 import { FcGoogle } from "react-icons/fc";
+import { RiCommunityLine } from "react-icons/ri";
+import { GiGrowth } from "react-icons/gi";
 
 function SignIn() {
     return (
@@ -33,17 +35,35 @@ function SignIn() {
                         </p>
                         {/* Info Boxes */}
                         <div className="space-y-6 w-full max-w-md">
-                            {['Community', 'Networking', 'Growth'].map((item) => (
-                                <div key={item} className="flex items-center gap-4">
-                                    <div className="border rounded-lg p-3 border-black">
-                                        <FaLaptop className="w-6 h-6 text-gray-400 dark:text-gray-500" />
-                                    </div>
-                                    <div className="text-left">
-                                        <p className="text-lg font-bold">{item}</p>
-                                        <p className="text-sm text-gray-500">At vero eos et accusamus et.</p>
-                                    </div>
+                            <div className="flex items-center gap-4">
+                                <div className="border rounded-lg p-3 border-black">
+                                    <RiCommunityLine className="w-6 h-6" />
                                 </div>
-                            ))}
+                                <div className="text-left">
+                                    <p className="text-lg font-bold">Community</p>
+                                    <p className="text-sm text-gray-500">At vero eos et accusamus et.</p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-4">
+                                <div className="border rounded-lg p-3 border-black">
+                                    <FaNetworkWired className="w-6 h-6" />
+                                </div>
+                                <div className="text-left">
+                                    <p className="text-lg font-bold">Networking</p>
+                                    <p className="text-sm text-gray-500">At vero eos et accusamus et.</p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-4">
+                                <div className="border rounded-lg p-3 border-black">
+                                    <GiGrowth className="w-6 h-6" />
+                                </div>
+                                <div className="text-left">
+                                    <p className="text-lg font-bold">Growth</p>
+                                    <p className="text-sm text-gray-500">At vero eos et accusamus et.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </CardContent>
