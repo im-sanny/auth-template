@@ -25,7 +25,7 @@ function SignIn() {
 
             <Card className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 justify-center items-center my-auto w-full h-full max-w-sm mx-auto overflow-hidden bg-white border-2 dark:bg-gray-800 lg:max-w-2xl rounded-none">
                 {/* Text part */}
-                <CardContent className="order-2 lg:order-1 bg-cover p-8">
+                <CardContent className="flex flex-col justify-center items-center h-full order-2 lg:order-1 bg-cover p-8 bg-blue-200">
                     <div className="flex flex-col justify-center items-center">
                         <p className="text-2xl font-bold text-center mb-6 w-full">
                             Join the Club
@@ -69,7 +69,7 @@ function SignIn() {
                 </CardContent>
 
                 {/* Form */}
-                <CardContent className="order-1 lg:order-2 w-full px-6 py-8 md:px-8 bg-blue-200">
+                <CardContent className="order-1 lg:order-2 w-full px-6 py-8 md:px-8">
                     <div className="flex justify-center mx-auto">
                         <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="" />
                     </div>
