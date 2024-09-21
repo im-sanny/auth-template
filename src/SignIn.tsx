@@ -86,11 +86,14 @@ function SignIn() {
                         <a href="#" className="text-xs text-gray-500 dark:text-gray-300 hover:underline">Forget Password?</a>
                     </div>
 
-                    <Button className="w-full mt-4 bg-gray-800 hover:bg-gray-700 rounded-full">Sign In</Button>
-
-                    <Button variant="outline" className="w-full mt-4 bg-gray-800 hover:bg-gray-700 text-white rounded-full">
-                        <FcGoogle className="w-6 h-6 mr-2" />
-                        Sign in with Google
+                    <Button type="submit" className="w-full mt-4 rounded-full bg-primary hover:bg-primaryHover">
+                        Sign Up
+                    </Button>
+                    <Button className="w-full rounded-full bg-primary hover:bg-primaryHover mt-4">
+                        <div className="flex items-center justify-center">
+                            <FcGoogle className="w-6 h-6 mr-2" />
+                            <span className="font-semibold">Sign up with Google</span>
+                        </div>
                     </Button>
 
                     <div className="flex items-center justify-between mt-4">

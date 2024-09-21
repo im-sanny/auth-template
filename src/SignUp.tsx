@@ -231,22 +231,21 @@ const SignUp = () => {
                             </button>
                         </div>
 
-                        <Button type="submit" className="w-full rounded-full">
+                        <Button type="submit" className="w-full rounded-full bg-primary hover:bg-primaryHover">
                             Sign Up
                         </Button>
                         <Button
-                            variant="outline"
-                            className="w-full rounded-full hover:bg-gray-100 mt-4"
+
+                            className="w-full rounded-full bg-primary hover:bg-primaryHover mt-4"
                         >
                             <div className="flex items-center justify-center">
                                 <FcGoogle className="w-6 h-6 mr-2" />
-                                <span className="font-semibold">Sign in with Google</span>
+                                <span className="font-semibold">Sign up with Google</span>
                             </div>
                         </Button>
                     </form>
                 </div>
             </div>
-
         </div>
     );
 };
